@@ -4,4 +4,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("How to build ur masles")
+    return HttpResponse("Test")
+
+def about(request):
+    return HttpResponse("Rango says here is the about page.")
