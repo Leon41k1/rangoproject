@@ -1,28 +1,24 @@
-<!DOCTYPE html>
+{% extends 'rango/base.html' %}
 {% load staticfiles %}
-<html>
 
-    <head>
-        <title>Rango</title>
-        
-    </head>
-    <body>
-        <h1>Rango says...</h1>
-        <div>
-            hey there partner! <br />
-            <strong>This tutorial has been put together by Leo Ihnatiuk </strong><br />
-        </div>
-        <div>
-           <p>
-                here is about page
-           </p> 
-        </div>
-        <div>
-            <a href="/rango/">Index</a><br />
-            <img src="{% static 'images/rango.jpg' %}" 
+{% block title_block %}
+    About Rango
+{% endblock %}
+
+{% block body_block %}
+    <h1>Rango says...</h1>
+    <div>
+        hey there partner! <br />
+        <strong>This tutorial has been put together by Leo Ihnatiuk </strong><br />
+    </div>
+    <div>
+        <p>
+            here is about page
+        </p> 
+    </div>
+    <div>    
+        <img src="{% static 'images/rango.jpg' %}" 
                 alt="Rango the chameleon">
-            <img src="/media/cat.jpg" alt="Cat">
-        </div>
-
-    </body>
-</html>
+        <img src="/media/cat.jpg" alt="Cat">
+    </div>
+{% endblock %}
